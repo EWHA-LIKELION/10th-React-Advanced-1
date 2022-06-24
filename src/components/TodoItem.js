@@ -52,6 +52,7 @@ const Text = styled.div`
 	font-size: 21px;
 	color: #495057;
 	${props =>
+	
 		props.done &&
 		css`
 			color: #ced4da;

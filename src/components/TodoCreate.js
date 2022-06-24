@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { MdAdd } from 'react-icons/md';
 import { useTodoDispatch, useTodoNextId } from '../TodoContext';
-
 const CircleButton = styled.button`
 	background: #38d9a9;
 	&:hover {
@@ -16,6 +15,7 @@ const CircleButton = styled.button`
 	cursor: pointer;
 	width: 80px;
 	height: 80px;
+	display: block;
 	align-items: center;
 	justify-content: center;
 	font-size: 60px;
@@ -27,6 +27,9 @@ const CircleButton = styled.button`
 	border-radius: 50%;
 	border: none;
 	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 	transition: 0.125s all ease-in;
 	${props =>
